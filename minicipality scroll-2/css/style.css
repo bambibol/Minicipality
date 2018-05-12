@@ -1,0 +1,35 @@
+body{
+  background-color:#000;
+  background: url('../img/bg01.png') no-repeat center center fixed;
+   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+.mountains {
+  background: url('../img/mountain02.png') repeat-x;
+  width: 100%;
+  height: 900px;
+  margin-top: 0px;
+  box-sizing: border-box;
+  position: absolute;
+  -webkit-animation: slide 20s linear infinite;
+}
+
+.houses {
+  background: url('../img/houses02.png') repeat-x;
+  width: 100%;
+  height: 668px;
+  margin-top: 275px;
+  box-sizing: border-box;
+  position: absolute;
+  -webkit-animation: slide 10s linear infinite;
+}
+
+
+@-webkit-keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: -3236px 0; }
+}
