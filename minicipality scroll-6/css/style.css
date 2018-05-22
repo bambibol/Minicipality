@@ -1,0 +1,209 @@
+body{
+  background: url('../img/bg_g.png') no-repeat center center fixed;
+   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: helvetica;
+  max-height: 100%;
+  max-width: 100%;
+  z-index: 0;
+}
+
+
+.mountains {
+  background: url('../img/mountain_g.png') repeat-x;
+  width: 101%;
+  height: 60vh;
+  background-size: cover;
+  box-sizing: border-box;
+  position: absolute;
+  left:-10px;
+  -webkit-animation: mountains 80s linear infinite;
+}
+
+.buildings {
+  background: url('../img/buildings_5.png') repeat-x;
+  width: 101%;
+  height: 60vh;
+  background-size: cover;
+  box-sizing: border-box;
+  position: absolute;
+  left:-10px;
+  -webkit-animation: buildings 30s linear infinite;
+  z-index: 20;
+}
+
+
+.greet {
+  opacity: 0.5;
+  width: 400px;
+  height: 400px;
+  margin: 2% auto;
+  background: url('../img/greet.png') left center;
+  animation: greet 1s steps(26) infinite;
+  position: absolute;
+  bottom: 20vh;
+  left: 100px;
+  z-index: 30;
+}
+
+.ellen {
+  width: 400px;
+  height: 400px;
+  margin: 2% auto;
+  background: url('../img/ellen.png') left center;
+  animation: ellen 1s steps(15) infinite;
+  position: absolute;
+  bottom: 20vh;
+  left: 700px;
+  z-index: 30;
+}
+
+.brad {
+  width: 400px;
+  height: 400px;
+  margin: 2% auto;
+  background: url('../img/brad.png') left center;
+  animation: brad 1s steps(21) infinite;
+  position: absolute;
+  bottom: 20vh;
+  right: 700px;
+  z-index: 30;
+}
+
+
+.ping {
+  width: 400px;
+  height: 400px;
+  margin: 2% auto;
+  background: url('../img/ping.png') left center;
+  animation: ping 1s steps(39) infinite;
+  position: absolute;
+  bottom: 20vh;
+  right: 200px;
+  z-index: 30;
+}
+
+
+.nuru {
+  width: 400px;
+  height: 400px;
+  margin: 2% auto;
+  background: url('../img/nuru.png') left center;
+  animation: nuru 1s steps(22) infinite;
+  position: absolute;
+  bottom: 20vh;
+  left: 1200px;
+  z-index: 30;
+}
+
+@keyframes greet {
+  100% { background-position: -10401px; }
+}
+
+@keyframes ellen {
+  100% { background-position: -5999px; }
+}
+
+@keyframes brad {
+  100% { background-position: -8192px; }
+}
+
+@keyframes ping {
+  100% { background-position: -15578px; }
+}
+
+@keyframes nuru {
+  100% { background-position: -8805px; }
+}
+
+@-webkit-keyframes mountains {
+    from { background-position: 0 0; }
+    to { background-position: -6471px 0; }
+}
+
+@-webkit-keyframes buildings {
+    from { background-position: 0 0; }
+    to { background-position: -6470px 0; }
+}
+
+
+.score{
+  height:20vh;
+  position: relative;
+  padding:10px;
+  top:78vh;
+  width:97.5%; 
+  background-color: #e9e6d5;
+  z-index: 40;
+  padding-left:40px;
+ position: fixed;
+}
+
+#safety, #nature, #happiness, #economy, #community, #other{
+  height:20vh;
+  width:29vh;
+  display:inline-block;
+  margin:50px;
+  margin-bottom:20px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 40%;
+}
+
+#safety{
+  background-image: url('../img/safety.svg'); 
+}
+
+#nature{
+  background-image: url('../img/nature.svg'); 
+}
+
+#happiness{
+  background-image: url('../img/happiness.svg'); 
+}
+
+#economy{
+  background-image: url('../img/economy.svg'); 
+}
+
+#community{
+  background-image: url('../img/community.svg'); 
+}
+
+
+
+.gdas-range {
+  margin-top:12vh;
+  -webkit-appearance: none;
+  width: 30vh;
+  height: 10px;
+  background-image: linear-gradient(to right,#1ABC9C 0%, #F1C40F 50%, #E74C3C 100%);
+  outline: none;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  border-radius: 5px;
+}
+
+.gdas-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 5px solid transparent;
+    border-radius: 50%;
+    background-image: linear-gradient(white, white), linear-gradient(to right,#1ABC9C 0%, #F1C40F 50%, #E74C3C 100%);
+    background-attachment: fixed, fixed;
+    background-clip: padding-box, border-box;
+}
+
+
+
+
+
+
+
+
+
+
